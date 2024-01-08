@@ -1,0 +1,22 @@
+"""Russian Roulette"""
+
+import random
+
+# Creating the gun chamber
+chamber = [1,2,3,4,5,6]
+
+# Creating the player + bullet 
+
+player = input("Press enter to pull the trigger:" )
+player = random.randint(1,7)
+bullet = random.choice(chamber)
+
+#Creating the game
+if player == bullet:
+  print("You went out with a BANG!")
+else:
+  print("You survived")
+
+
+
+
